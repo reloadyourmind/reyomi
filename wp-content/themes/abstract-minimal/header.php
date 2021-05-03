@@ -60,6 +60,11 @@
 
                 <h2 class="s-header__nav-heading h6">Site Navigation</h2>
 
+                <?php wp_nav_menu( array( 
+                    'theme_location' => 'header-menu',
+                    'container' => false,
+                    'items_wrap' => '<ul class="s-header__nav"></li>%3$s</ul>'  
+                ) ); ?>
                 <ul class="s-header__nav">
                     <li class="current"><a href="/" title="">Home</a></li>
                     <li class="has-children">

@@ -97,17 +97,13 @@ get_header(); ?>
 
 					 -->
 
-					<?php
- 					$args = array(
-				    'post_type' => 'post',
-				);
-					// The Query
-					$query = new WP_Query( $args );
+					<?php 
+					$args = ['post_type' => 'post'];
+					$query = new WP_Query($args);
 					?>
-					 
 		
 				    
-					<?php if ($query->have_posts()) : while ($query->have_posts()) : the_post(); ?>
+					<?php if($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
 					    <article class="brick entry format-standard" style="position: absolute; left: 50%; top: 0px;">
 					        <div class="entry__thumb">
 							<a href="<?php the_permalink()?>" class="thumb-link">
@@ -120,27 +116,24 @@ get_header(); ?>
 
 								<div class="entry__meta">
 									<span class="entry__cat-links">
-										<a href="#">Design</a> 
-										<a href="#">Photography</a>
+										<?php the_tags('<a>','','</a>'); ?>
 									</span>
 								</div>
 
 								<h1 class="entry__title">
-									<a href="'.the_permalink().'"><?php the_title()?></a>
+									<a href="<?php the_permalink()?>"><?php the_title()?></a>
 								</h1>
 
 							</div>
 							<div class="entry__excerpt">
-								<p>'.the_excerpt().'</p>
+								<p><?php the_excerpt()?></p>
 							</div>
 						</div> <!-- end entry__text -->
-						</article> <!-- end entry -->';
-					    }
+						</article> <!-- end entry -->
 					<?php endwhile; else: ?>
 					<p>Записей не найдено.</p>
 					<?php endif; ?>
-					wp_reset_postdata();
-					?>
+					<?php wp_reset_postdata();?>
 
 					<article class="brick entry format-standard" style="position: absolute; left: 50%; top: 0px;">
 

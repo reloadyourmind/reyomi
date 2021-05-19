@@ -8,7 +8,7 @@
 
                 <div class="column large-4 medium-6 tab-12 s-footer__info">
 
-                    <h5>About Our Site</h5>
+                    <h5>О проекте</h5>
 
                     <p>
                     Lorem ipsum Ut velit dolor Ut labore id fugiat in ut fugiat nostrud qui in dolore commodo eu magna Duis cillum dolor officia esse mollit proident Excepteur exercitation nulla. Lorem ipsum In reprehenderit commodo aliqua irure labore.
@@ -18,7 +18,7 @@
 
                 <div class="column large-2 medium-3 tab-6 s-footer__site-links">
 
-                    <h5>Site Links</h5>
+                    <h5>Ссылки</h5>
 
                     <ul>
                         <li><a href="#0">About Us</a></li>
@@ -32,7 +32,7 @@
 
                 <div class="column large-2 medium-3 tab-6 s-footer__social-links">
 
-                    <h5>Social</h5>
+                    <h5>Социальные сети</h5>
 
                     <ul>
                         <li><a href="#0">Twitter</a></li>
@@ -46,9 +46,9 @@
 
                 <div class="column large-4 medium-12 s-footer__subscribe">
 
-                    <h5>Subscribe</h5>
+                    <h5>Подписаться</h5>
 
-                    <p>Keep yourself updated. Subscribe to our newsletter.</p>
+                    <p>Подпишись на рассылку чтобы получать инсайты раньше всех</p>
 
                     <div class="subscribe-form">
                 
